@@ -1,0 +1,134 @@
+
+/* VARIABLES */
+$orange : #E58A0A;
+$violet : #8F5BFE;
+$fond_rose : #F3E9F1;
+$font_color : #261624;
+$grey : #cccc;
+$gradient_background: linear-gradient(120deg, $orange, $violet 60% );
+
+/* MIXINS */
+
+/* GENERAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $font_color;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: $font_color;
+  text-decoration: none;
+}
+img {
+  overflow: hidden;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 35px;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $fond_rose;
+  max-height: 70px;
+  padding: 10px;
+  padding-right: 50px;
+  box-shadow: -10px 15px 50px -15px #111;
+  img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    max-height: 70px;
+    }
+}
+#panier a:hover{
+  font-size: 1.2em;
+}
+/* SECTION */
+section {
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  .presentation, .items{
+    text-align: center;
+  }
+}
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .vignette {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin: 40px;
+    padding: 3px;
+    width: 300px;
+    // max-height: auto;
+    border-radius: 30px 30px 0px 30px;
+    border: solid 1px #f8f8f8;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 5px 5px -5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 5px -5px 0px rgba(0,0,0,0.15);
+    &:hover {
+      box-shadow: -5px -5px -5px 0px rgba(0,0,0,0.15);
+      -webkit-box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.15);
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      object-fit: cover;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 0 8px 8px white inset;
+      border-radius: 0 0 0 25px;
+    }
+    .text_price {
+      background-color: $fond_rose;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      padding: 10px;
+      position: relative;
+      top: -10px;
+      right: -100px;
+      text-align: center;
+    }
+    h4 {
+      font-size: 24px;
+      align-content: center;
+      align-items: center;
+      position: relative;
+      bottom: 22px;
+    }
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  background : $gradient_background;
+  width: 100%;
+  display: flex;
+  max-height: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  h2 {
+    font-size: 14px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
