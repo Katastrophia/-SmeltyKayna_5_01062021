@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+
+  <meta name="description" content="Découvrez notre gamme d'ours en peluche, séléctionnés et livrés avec le soin et la qualité Orinoco">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./index.js" defer></script>
+  <link rel="icon" type="image.png" href="./images/favicon-orinoco-min.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <title>Orinours By Orinoco</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html" title="accueil">
+        <img src="./images/orinoco-resized-min.png" alt="Orinoco">
+      </a>
+    </div>
+    <div id="panier" class="panier">
+      <a href="pagePanier.html" title="mon panier"><i class="fas fa-shopping-cart fa-2x"></i></a>
+    </div>
+  </header>
+
+  <section id="produit">
+    <ul>
+      <li>1. Choisissez votre ours en peluche fait main</li>
+      <li>2. Personnalisez-le</li>
+      <li>3. Adoptez-le !</li>
+    </ul>
+    <!-- article entier -->
+    <article class="produit">
+<!-- image -->
+      <div class="item_img">
+        <div class="img">
+          <img id="item_img" src="./images/peluches/teddy_4.jpg" alt="img">
+        </div>
+      </div>
+<!-- fin image -->
+<!-- description -->
+
+      <div id="item-description" class="item_description">
+        <div class="text_title">
+          <h1 id="item_title">EDOUARD</h1>
+          <h2 id="item_price">25€</h2>
+        </div>
+        <div class="text_description">
+          <h2 id="item_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+        </div>
+        <div class="item_filtre">
+          <label for="item_colors">Choisissez sa couleur</label>
+
+          <select name="colors" id="color_select">
+              <option value="Brown">Marron</option>
+              <option value="Black">Noir</option>
+              <option value="White">Blanc</option>
+              <option value="Pink">Rose</option>
+              <option value="Blue">Bleu</option>
+          </select>
+
+        </div>
+        <div class="item_buy panier">
+          <a href="#item_description" title="ajouter au panier"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        </div>
+
+      </div>
+<!-- fin description -->
+    </article>
+    <!-- fin article entier -->
+  </section>
+
+  <footer>
+    <h2><a href="#index">Orinours</a> by Orinoco | Entreprise de commerce en ligne</h2>
+  </footer>
+</body>
+</html>
